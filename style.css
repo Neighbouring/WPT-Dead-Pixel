@@ -1,0 +1,78 @@
+/*
+Theme Name: WPT Dead Pixel
+Theme URI: https://www.neighbouriong.com.br/
+Author: Flávio Conca
+Author URI: https://www.neighbouriong.com.br/
+Description: Tema desenvolvido para Estúdio Dead Pixel.
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: featured-images, custom-background, theme-options, translation-ready
+Text Domain: WPT-Estudio-Dead-Pixel
+Requires at least: 4.6
+Tested up to: 6.0
+Requires PHP: 5.6
+*/
+
+
+body {
+    margin: 0px;
+    font-family: Helvetica Neue;
+}
+
+/* PRELOADER DEAD PIXEL */
+div#loadingIntro {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('assets/img/preloader/tv-off-lower.gif');
+    background-size: cover;
+    z-index: 9999;
+  }
+  
+  div#loadingLogo {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+/* HEADER */
+header#header-dead-pixel {
+    background-color: black;
+    padding: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    /* Remove espaço abaixo do Header */
+        margin-bottom: -6px;
+}
+/* Logo Dead Pixel */
+div#logo-dead-pixel {
+    margin: 0;
+    width: 50%;
+}
+/* Nav Menu Lista Desordenada */
+ul#menu-menu, ul#menu-menu a {
+    list-style: none;
+    display: flex;
+    color: white;
+    font-size: 9px;
+    text-decoration: none;
+    padding: 0;
+}
+li.menu-item {
+    text-transform: uppercase;
+    padding: 0px 10px 0px 5px;
+}
+
+
+/* Section Conteúdo Padrão */
+section#dead-pixel-content {
+    min-height: 100vh;
+    margin: 5px;
+}
