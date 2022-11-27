@@ -57,7 +57,8 @@ div#logo-dead-pixel {
     width: 50%;
 }
 /* Nav Menu Lista Desordenada */
-ul#menu-menu-principal, ul#menu-menu-principal a {
+ul#menu-menu-principal,
+ul#menu-menu-principal>a{
     list-style: none;
     display: flex;
     color: white;
