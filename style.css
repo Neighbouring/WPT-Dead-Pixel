@@ -18,6 +18,7 @@ Requires PHP: 5.6
 body {
     margin: 0px;
     font-family: Helvetica Neue;
+    font-size: 12px;
 }
 
 /* PRELOADER DEAD PIXEL */
@@ -56,7 +57,7 @@ div#logo-dead-pixel {
     margin: 0;
     width: 50%;
 }
-/* Nav Menu Lista Desordenada */
+/* Nav Menu Lista UL */
 ul#menu-menu, ul#menu-menu a {
     list-style: none;
     display: flex;
@@ -65,14 +66,35 @@ ul#menu-menu, ul#menu-menu a {
     text-decoration: none;
     padding: 0;
 }
+/* Nav Menu Item da Lista LI */
 li.menu-item {
     text-transform: uppercase;
     padding: 0px 10px 0px 5px;
 }
 
 
-/* Section Conteúdo Padrão */
-section#dead-pixel-content {
-    min-height: 100vh;
-    margin: 5px;
+/* Slider - Setup Geral */
+div#linha01 {
+    top: -10px;
+}
+
+/* Barra Descrição - Slider */
+#descricao{
+    color: white;
+    height: 30px;
+}
+.vc_row-full-width.vc_clearfix {
+    margin-top: -45px;
+}
+/* TESTE */
+.vc_col-has-fill>.vc_column-inner, .vc_row-has-fill+.vc_row-full-width+.vc_row>.vc_column_container>.vc_column-inner, .vc_row-has-fill+.vc_row>.vc_column_container>.vc_column-inner, .vc_row-has-fill>.vc_column_container>.vc_column-inner,
+.wpb_text_column.wpb_content_element {
+    padding-top: unset !important;
+}
+.wpb_column.vc_column_container.vc_col-sm-2 {
+    height: inherit;
+    margin-top: -5px;
+}
+.vc_toggle_title {
+    margin-top: 7px !important;
 }
