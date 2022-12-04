@@ -14,14 +14,15 @@ Tested up to: 6.0
 Requires PHP: 5.6
 */
 
-
 body {
     margin: 0px;
     font-family: Helvetica Neue;
     font-size: 12px;
 }
-
-/* PRELOADER DEAD PIXEL */
+html{
+    scroll-behavior: smooth;
+}
+/* PRELOADER - Dead Pixel */
 div#loadingIntro {
     display: block;
     position: fixed;
@@ -29,35 +30,41 @@ div#loadingIntro {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('assets/img/preloader/tv-off-lower.gif');
-    background-size: cover;
+    background-color: black;
+    /* background-image: url('assets/img/preloader/tv-off-lower.gif'); */
+    /* background-size: cover; */
     z-index: 9999;
-  }
-  
-  div#loadingLogo {
+}
+div#loadingLogo {
     display: flex;
+    flex-direction: column;
     height: 100vh;
     align-items: center;
     justify-content: center;
-  }
+}
+div#info-carregando {
+    margin-top: 25px;
+    color: white;
+}
 
-  
+
+
 /* HEADER */
 header#header-dead-pixel {
     background-color: black;
-    padding: 5px;
+    padding: 0px 5px 0px 5px;
     height: 30px;
     display: flex;
     align-items: center;
     /* Remove espaço abaixo do Header */
-        margin-bottom: -6px;
+    margin-bottom: -6px;
 }
-/* Logo Dead Pixel */
+/* LOGO SVG - Dead Pixel */
 div#logo-dead-pixel {
     margin: 0;
     width: 50%;
 }
-/* Nav Menu Lista UL */
+/* NAV MENU - Lista UL */
 ul#menu-menu, ul#menu-menu a {
     list-style: none;
     display: flex;
@@ -66,35 +73,50 @@ ul#menu-menu, ul#menu-menu a {
     text-decoration: none;
     padding: 0;
 }
-/* Nav Menu Item da Lista LI */
+/* NAV MENU - Item da Lista LI */
 li.menu-item {
     text-transform: uppercase;
     padding: 0px 10px 0px 5px;
 }
-
-
-/* Slider - Setup Geral */
-div#linha01 {
-    top: -10px;
+div#nav-menu-dead-pixel {
+    margin-top: -1px;
 }
 
-/* Barra Descrição - Slider */
-#descricao{
+
+
+/* SLIDER - Setup Geral */
+/* DESCRIÇÃO - Informações do JOB e Ficha Técnica */
+div#descricao-tecnica-job {
+    margin: 0px 5px 0px 5px;
     color: white;
-    height: 30px;
+    display: flex;
+    justify-content: center;
 }
-.vc_row-full-width.vc_clearfix {
-    margin-top: -45px;
+div#col-1,
+div#col-2 {
+    width: 50%;
+    display: flex;
 }
-/* TESTE */
-.vc_col-has-fill>.vc_column-inner, .vc_row-has-fill+.vc_row-full-width+.vc_row>.vc_column_container>.vc_column-inner, .vc_row-has-fill+.vc_row>.vc_column_container>.vc_column-inner, .vc_row-has-fill>.vc_column_container>.vc_column-inner,
-.wpb_text_column.wpb_content_element {
-    padding-top: unset !important;
+div#txt-cliente,
+div#txt-campanha,
+div#txt-agencia,
+div#txt-ano,
+div#txt-diretor {
+    width: 25%;
 }
-.wpb_column.vc_column_container.vc_col-sm-2 {
-    height: inherit;
-    margin-top: -5px;
+details#ver-mais {
+    width: 75%;
 }
-.vc_toggle_title {
-    margin-top: 7px !important;
+/* Sumário */
+details:not([open]) summary:hover,
+details:not([open]) summary:focus {      
+  background: black;
+  color: white;
+}
+summary {
+    list-style-type: none;
+    text-align: right;
+}
+summary::webkit-details-marker {
+    display: none 
 }

@@ -8,17 +8,62 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
 
 <?php wp_head(); ?>
 <?php get_header(); ?>
 
 <main>
-    <?php wp_body_open(); ?>    
+
+    <?php if ( have_posts() ) : while( have_posts()  ) : the_post(); ?>
+        
+        <!-- <?php the_permalink(); ?> -->
+        <!-- <?php the_title(); ?> -->
+        <!-- <?php the_post_thumbnail( 'full' ); ?> -->
+        <!-- <?php the_excerpt(); ?> -->
+        <!-- <?php content_url(); ?> -->
+        <!-- <?php get_the_content(); ?> -->
+
+        <?php the_content(); ?>
+
+        <div id="descricao-tecnica-job">
+            <div id="col-1">
+                <div id="txt-cliente">
+                    <?php the_field('cliente'); ?>
+                </div>
+                <div id="txt-campanha">
+                    <?php the_field('campanha'); ?>
+                </div>
+                <div id="txt-agencia">
+                    <?php the_field('agencia'); ?>
+                </div>
+                <div id="txt-ano">
+                    <?php the_field('ano'); ?>
+                </div>
+            </div>
+            <div id="col-2">
+                <div id="txt-diretor">
+                    <?php the_field('diretor'); ?>
+                </div>
+                <details id="ver-mais">
+                    <summary id="txt-ver-mais" onclick= "coordenadaMouse(event)">
+                    Ficha Técnica ↓
+                    </summary>
+                    <p>
+                        <?php the_field('ficha_tecnica'); ?>
+                    </p>
+                </details>
+            </div>
+
+        </div>
+
+    <?php endwhile; endif; ?>
+
 </main>
 
 <footer>
 	<?php wp_footer(); ?>
-	<!-- <?php get_footer(); ?> -->
+	<?php get_footer(); ?>
 </footer>
 
 </body>

@@ -6,6 +6,8 @@
  * @subpackage wpt-dead-pixel
  */
 
+
+
 if ( ! function_exists( 'blank_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers the various WordPress features that
@@ -43,7 +45,6 @@ add_action( 'after_setup_theme', 'blank_setup' );
 /**
  * Sets up theme defaults and registers the various WordPress features that
  * this theme supports.
-
  * @param class $wp_customize Customizer object.
  */
 function blank_customize_register( $wp_customize ) {
@@ -107,13 +108,19 @@ function blank_customize_register( $wp_customize ) {
 }
 add_action( 'customize_register', 'blank_customize_register', 100 );
 
+
+
 // Registra Estilo CSS
 // Documentação https://developer.wordpress.org/themes/basics/including-css-javascript/
 wp_enqueue_style( 'style', get_stylesheet_uri() );
 
+
+
 // Registra Script JS
 // Documentação https://developer.wordpress.org/themes/basics/including-css-javascript/
 wp_enqueue_script( 'dead-pixel-script', get_template_directory_uri() . '/assets/js/dead-pixel.js', array(), wp_get_theme()->get( 'Version' ), true );
+
+
 
 // Adicionar Navigation Menu
 // Documentação https://developer.wordpress.org/themes/functionality/navigation-menus/
@@ -127,3 +134,155 @@ function register_my_menus() {
 	 );
    }
    add_action( 'init', 'register_my_menus' );
+
+
+
+// Gerar ACF para JOBS
+if( function_exists('acf_add_local_field_group') ):
+
+	acf_add_local_field_group(array(
+		'key' => 'group_638993b63b69f',
+		'title' => 'JOB',
+		'fields' => array(
+			array(
+				'key' => 'field_638993b615a36',
+				'label' => 'Cliente',
+				'name' => 'cliente',
+				'aria-label' => '',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => 'Cliente',
+				'maxlength' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+			),
+			array(
+				'key' => 'field_6389943115a37',
+				'label' => 'Campanha',
+				'name' => 'campanha',
+				'aria-label' => '',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => 'Campanha',
+				'maxlength' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+			),
+			array(
+				'key' => 'field_6389945a15a38',
+				'label' => 'Agência',
+				'name' => 'agencia',
+				'aria-label' => '',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => 'Agência',
+				'maxlength' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+			),
+			array(
+				'key' => 'field_6389946a15a39',
+				'label' => 'Ano',
+				'name' => 'ano',
+				'aria-label' => '',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => 'Ano',
+				'maxlength' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+			),
+			array(
+				'key' => 'field_6389948315a3a',
+				'label' => 'Diretor',
+				'name' => 'diretor',
+				'aria-label' => '',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => 'Diretor',
+				'maxlength' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+			),
+			array(
+				'key' => 'field_6389948c15a3b',
+				'label' => 'Ficha Técnica',
+				'name' => 'ficha_tecnica',
+				'aria-label' => '',
+				'type' => 'textarea',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => 'Ficha Técnica',
+				'maxlength' => '',
+				'rows' => '',
+				'placeholder' => '',
+				'new_lines' => '',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'post',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'acf_after_title',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => '',
+		'show_in_rest' => 0,
+	));
+	
+	endif;		
