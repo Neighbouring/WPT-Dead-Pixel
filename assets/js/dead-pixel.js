@@ -22,5 +22,5 @@ function coordenadaMouse(){
   // Scroll 100px a partir da coordenada do clique
   // window.scrollBy(0, window.innerHeight);
   // window.scrollBy(0, window.innerHeight - window.innerHeight+100);
-  window.scrollBy(0, window.innerHeight);
+  window.scrollBy(0, window.innerHeight-800);
 }

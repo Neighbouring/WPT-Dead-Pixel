@@ -15,21 +15,55 @@
 <?php wp_head(); ?>
 <?php get_header(); ?>
 
-<section id="dead-pixel-content">
+<main>
 
-<?php if ( have_posts() ) : while( have_posts()  ) : the_post(); ?>
-    <h1><?php the_title(); ?></h1>
-    <a href="<?php the_permalink(); ?>">
-        <?php the_post_thumbnail( 'full' ); ?>
-    </a>
-    <p><?php the_content(); ?></p>
-<?php endwhile; else:
-?>
-    <h1> Conteúdo não localizado :-( </h1>
-<?php endif; ?>
+    <?php if ( have_posts() ) : while( have_posts()  ) : the_post(); ?>
+        
+        <!-- <?php the_permalink(); ?> -->
+        <!-- <?php the_title(); ?> -->
+        <!-- <?php the_post_thumbnail( 'full' ); ?> -->
+        <!-- <?php the_excerpt(); ?> -->
+        <!-- <?php content_url(); ?> -->
+        <!-- <?php get_the_content(); ?> -->
 
+        <?php the_content(); ?>
 
-</section>
+        <div id="descricao-tecnica-job">
+            <div id="col-1">
+                <div id="txt-cliente">
+                    <?php the_field('cliente'); ?>
+                </div>
+                <div id="txt-campanha">
+                    <?php the_field('campanha'); ?>
+                </div>
+                <div id="txt-agencia">
+                    <?php the_field('agencia'); ?>
+                </div>
+                <div id="txt-ano">
+                    <?php the_field('ano'); ?>
+                </div>
+            </div>
+            <div id="col-2">
+                <div id="txt-diretor">
+                    Direção: <?php the_field('diretor'); ?>
+                </div>
+                <details id="ver-mais">
+                    <summary id="txt-ver-mais" onclick="coordenadaMouse()">
+                    Ficha Técnica ↓
+                    </summary>
+                    <p>
+                        <?php the_field('ficha_tecnica'); ?>
+                    </p>
+                </details>
+            </div>
+
+        </div>
+
+    <?php endwhile; else: ?>
+        <h1> Conteúdo não localizado :-( </h1>
+    <?php endif; ?>
+
+</main>
 
 <footer>
 	<?php wp_footer(); ?>
@@ -38,4 +72,3 @@
 
 </body>
 </html>
-
