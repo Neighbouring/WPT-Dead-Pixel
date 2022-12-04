@@ -43,10 +43,10 @@
             </div>
             <div id="col-2">
                 <div id="txt-diretor">
-                    <?php the_field('diretor'); ?>
+                    Direção: <?php the_field('diretor'); ?>
                 </div>
                 <details id="ver-mais">
-                    <summary id="txt-ver-mais" onclick= "coordenadaMouse(event)">
+                    <summary id="txt-ver-mais" onclick="coordenadaMouse()">
                     Ficha Técnica ↓
                     </summary>
                     <p>

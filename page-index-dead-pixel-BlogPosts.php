@@ -1,4 +1,4 @@
-<?php /* Template Name: Dead Pixel Post*/ ?>
+<?php /* Template Name: Dead Pixel Post */ ?>
 
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
