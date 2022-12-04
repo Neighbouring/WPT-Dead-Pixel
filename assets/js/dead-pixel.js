@@ -6,14 +6,10 @@ const concluirCarregamento = setTimeout(fecharDivLoading, 1500);
 function fecharDivLoading() {
   document.getElementById('loadingIntro').style.display = 'none';
 }
-
-console.log("DEU BOM!")
-
-
-
+console.log("PRELOAD 💀 DEAD PIXEL - Carregado!")
 
 function coordenadaMouse(event){
-
   // console.log("X = " + event.clientX + "<br>Y = " + event.clientY);
-  console.log("X = " + event.clientX + "<br>Y = " + event.clientY);
-  }
+  console.log("X = " + event.clientX);
+  console.log("Y = " + event.clientY);
+}
