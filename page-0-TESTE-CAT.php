@@ -1,4 +1,4 @@
-<?php /* Template Name: 02 - TESTE CATEG */ ?>
+<?php /* Template Name: 00 - TESTE CATEG */ ?>
 
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>

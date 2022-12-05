@@ -1,8 +1,11 @@
 // INÍCIO DO SCRIPT
-// By FLávio Conca
+// By Flávio Conca
+// Neighbouring
+//
+// https://neighbouring.com.br
 
 
-
+// SNACKBAR
 // Conexão Estabelecida
 window.ononline = (event) => {
   snackbarOnline();
