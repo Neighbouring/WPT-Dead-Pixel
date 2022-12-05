@@ -17,9 +17,6 @@
 
 <section id="dead-pixel-content">
 
-
-
-
 <?php $categoriaPost = new WP_Query( array('tax_query' => array( 'relation' => 'AND',
     array(
       'taxonomy' => 'category',
@@ -39,16 +36,16 @@
 
         <div id="descricao-tecnica-job">
             <div id="col-1">
-                <div id="txt-cliente">
+                <div id="txt-cliente" itemprop="cliente">
                     <?php the_field('cliente'); ?>
                 </div>
-                <div id="txt-campanha">
+                <div id="txt-campanha" itemprop="campanha">
                     <?php the_field('campanha'); ?>
                 </div>
-                <div id="txt-agencia">
+                <div id="txt-agencia" itemprop="agencia">
                     <?php the_field('agencia'); ?>
                 </div>
-                <div id="txt-ano">
+                <div id="txt-ano" itemprop="ano">
                     <?php the_field('ano'); ?>
                 </div>
             </div>

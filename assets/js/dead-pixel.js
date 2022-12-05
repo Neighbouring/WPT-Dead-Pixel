@@ -30,7 +30,8 @@ function snackbarOffline() {
 
 
 
-// Carregar e Descarregar Loader na Home
+// PRELOADER
+// Carregar e Descarregar
 const concluirCarregamento = setTimeout(fecharDivLoading, 1500);
 function fecharDivLoading() {
   document.getElementById('loadingIntro').style.display = 'none';
@@ -38,7 +39,9 @@ function fecharDivLoading() {
 console.log("PRELOAD 💀 DEAD PIXEL - Carregado!")
 
 
-// Scroll Down ao clicar em Ficha Técnica
+
+// SCROLL DOWN
+// Ação ao clicar em Ficha Técnica
 function coordenadaMouse(){
 // function coordenadaMouse(event){
   // console.log("X = " + event.clientX + "<br>Y = " + event.clientY);
@@ -58,3 +61,35 @@ function coordenadaMouse(){
 
 
 
+// MENU
+// Carregar Modal Institucional
+document.getElementById("menu-item-43").addEventListener("click", modalAbrir);
+
+
+
+// BLOCK SCROLL
+// Desativar Scroll
+function desativaScroll() {
+  // Registra posição atual da tela
+  document.body.classList.add("block-scroll");
+}
+// Reativar Scroll
+function ativaScroll() {
+  document.body.classList.remove("block-scroll");
+}
+
+
+
+// MODAL
+// Abrir
+function modalAbrir() {
+  document.getElementById("modalInstitucional").style.display = 'block';
+  document.getElementById("btnFechar").style.display = 'block';
+  desativaScroll();
+}
+// Fechar
+function modalFechar() {
+  document.getElementById("modalInstitucional").style.display = 'none';
+  document.getElementById("btnFechar").style.display = 'none';
+  ativaScroll();
+}
