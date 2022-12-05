@@ -34,7 +34,7 @@
 					src="<?php echo get_template_directory_uri(); ?>
 					/assets/img/institucional/kiko-costato.png"
 				/>
-				<small>
+				<small id="nomeEquipe">
 				Kiko Costato
 				<br>
 				Sócio / Diretor
@@ -46,7 +46,7 @@
 					src="<?php echo get_template_directory_uri(); ?>
 					/assets/img/institucional/andre-ferezini.png"
 				/>
-				<small>
+				<small id="nomeEquipe">
 				André Ferezini
 				<br>
 				Diretor
@@ -58,7 +58,7 @@
 					src="<?php echo get_template_directory_uri(); ?>
 					/assets/img/institucional/gustavo-michelucci.png"
 				/>
-				<small>
+				<small id="nomeEquipe">
 				Gustavo Michelucci
 				<br>
 				Sócio / Diretor
