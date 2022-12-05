@@ -160,6 +160,14 @@ p#infoCNPJ {
 
 
 /* SLIDER - Setup Geral */
+/* POST THUMBNAIL - Imagem sem Slider exibe Imagem Destacada */
+img.imgCapa {
+    width: 100%;
+}
+img.imgCapa {
+    width: 100%;
+    margin: 5px 5px 0px 5px;
+}
 /* DESCRIÇÃO - Informações do JOB e Ficha Técnica */
 div#descricao-tecnica-job {
     margin: 0px 5px 0px 5px;

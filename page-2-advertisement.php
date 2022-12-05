@@ -32,6 +32,22 @@
   
 <?php if( $categoriaPost->have_posts() ): while( $categoriaPost->have_posts() ): $categoriaPost->the_post(); ?>
 
+    <div id="semSlider">
+        <!-- Exibir imagem caso não existe slider -->
+        <!-- DOC: https://developer.wordpress.org/reference/functions/the_post_thumbnail/ -->
+        <?php if ( has_post_thumbnail() ) : ?>
+            <?php 
+                the_post_thumbnail('lfull', 
+                $attr = array(
+                    'src'   => $src,
+                    'class' => "imgCapa",
+                    'alt'   => "Dead Pixel"
+                )
+            );
+                ?>
+        <?php endif; ?>
+    </div>
+    
     <?php the_content(); ?>
 
         <div id="descricao-tecnica-job">
