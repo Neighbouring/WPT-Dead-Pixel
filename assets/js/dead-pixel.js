@@ -6,7 +6,7 @@
 
 
 // SNACKBAR
-// Conexão Estabelecida
+// Verifica Conexão
 window.ononline = (event) => {
   snackbarOnline();
 };
