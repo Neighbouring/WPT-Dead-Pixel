@@ -46,7 +46,7 @@
                     Direção: <?php the_field('diretor'); ?>
                 </div>
                 <details id="ver-mais">
-                    <summary id="txt-ver-mais" onclick="coordenadaMouse()">
+                    <summary id="txt-ver-mais" onclick="coordenadaMouse(event)">
                     Ficha Técnica ↓
                     </summary>
                     <p>

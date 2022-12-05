@@ -1,4 +1,6 @@
 <!-- <h1>FOOTER AQUI</h1> -->
+<div id="sbOnline"> 👌🏽 Conexão estabelecida! </div>
+<div id="sbOffline"> 🦖 Conexão perdida! </div>
 
 <?php if ( get_theme_mod( 'blank_show_copyright', true ) ) : ?>
 

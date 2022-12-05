@@ -1,4 +1,4 @@
-<?php /* Template Name: Página INFO */ ?>
+<?php /* Template Name: 03 - Contato */ ?>
 
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
