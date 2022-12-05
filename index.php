@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body <?php body_class(); ?>>
+<body id="dead-pixel" <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
 <?php wp_head(); ?>

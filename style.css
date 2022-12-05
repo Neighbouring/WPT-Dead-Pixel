@@ -1,5 +1,5 @@
 /*
-Theme Name: WPT Dead Pixel
+Theme Name: Dead Pixel
 Theme URI: https://www.neighbouriong.com.br/
 Author: Flávio Conca
 Author URI: https://www.neighbouriong.com.br/
@@ -8,7 +8,7 @@ Version: 0.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: featured-images, custom-background, theme-options, translation-ready
-Text Domain: WPT-Estudio-Dead-Pixel
+Text Domain: Estudio-Dead-Pixel
 Requires at least: 4.6
 Tested up to: 6.0
 Requires PHP: 5.6
@@ -23,6 +23,9 @@ body {
 }
 html{
     scroll-behavior: smooth;
+}
+section#dead-pixel-content{
+    background-color: black;
 }
 
 
@@ -89,7 +92,7 @@ div#logo-dead-pixel {
 @media (max-width:600px){
     div#logo-dead-pixel {
         margin-top: 10px;
-        margin-left: 15px;
+        margin-left: 5px;
     }
 }
 /* NAV MENU - Lista UL */
@@ -182,13 +185,12 @@ img#ico-sm-vimeo {
         position: absolute;
         font-size: 24px;
         /* right: 4px; */
-        right: 14px;
-        margin-top: 19px;
+        right: 5px;
+        margin-top: 20px;
     }
     #btnAbreMMobile{
         display: block;
         color: white;
-        margin-right: 10px;
     }
 }
 
@@ -203,13 +205,13 @@ div#btnFechar {
     position: fixed;
         right: 0;
     cursor: pointer;
-    z-index: 5;
+    z-index: 7;
     display: none;
 }
 @media (max-width: 600px){
     div#btnFechar{
         top: 1px;
-        right: -2px;
+        right: -1px;
         margin: 0px;
     }
 }
@@ -244,7 +246,8 @@ div#modalInstitucional {
 @media (max-width: 600px){
     div#modalInstitucional{
         overflow: scroll;
-        padding: 40px 10px 40px 10px;;
+        padding: 20px 10px 40px 10px;
+        z-index: 6;
     }
 }
 div#modalFlex {
