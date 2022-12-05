@@ -36,19 +36,12 @@
         <!-- Exibir imagem caso não existe slider -->
         <!-- DOC: https://developer.wordpress.org/reference/functions/the_post_thumbnail/ -->
         <?php if ( has_post_thumbnail() ) : ?>
-            <?php 
-                the_post_thumbnail('lfull', 
-                $attr = array(
-                    'src'   => $src,
-                    'class' => "imgCapa",
-                    'alt'   => "Dead Pixel"
-                )
-            );
-                ?>
+            <div
+                id="bgImg"
+                style="background-image: url(<?php the_post_thumbnail_url() ?>);">
+            </div>
         <?php endif; ?>
     </div>
-    
-    <?php the_content(); ?>
 
         <div id="descricao-tecnica-job">
             <div id="col-1">
@@ -79,6 +72,8 @@
                 </details>
             </div>
         </div>
+
+        <?php the_content(); ?>
 
 <?php endwhile; else: ?>
 

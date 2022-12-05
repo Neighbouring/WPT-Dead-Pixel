@@ -161,16 +161,16 @@ p#infoCNPJ {
 
 /* SLIDER - Setup Geral */
 /* POST THUMBNAIL - Imagem sem Slider exibe Imagem Destacada */
-img.imgCapa {
-    width: 100%;
-}
-img.imgCapa {
-    width: 100%;
-    margin: 5px 5px 0px 5px;
+div#bgImg{
+    height: 95vh;
+    /* height: calc(96vh - 5px); */
+    margin: 5px; 
+    background-position: center;
+    background-size: cover;
 }
 /* DESCRIÇÃO - Informações do JOB e Ficha Técnica */
 div#descricao-tecnica-job {
-    margin: 0px 5px 0px 5px;
+    margin: 0px 5px 5px 5px;
     color: white;
     display: flex;
     justify-content: center;
