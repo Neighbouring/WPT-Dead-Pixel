@@ -17,9 +17,6 @@
 
 <section id="dead-pixel-content">
 
-
-
-
 <?php $categoriaPost = new WP_Query( array('tax_query' => array( 'relation' => 'AND',
     array(
       'taxonomy' => 'category',
@@ -34,9 +31,39 @@
   ) ) ); ?>
   
 <?php if( $categoriaPost->have_posts() ): while( $categoriaPost->have_posts() ): $categoriaPost->the_post(); ?>
-  
-    <?php the_title() ?>
-    <?php the_content() ?>
+
+    <?php the_content(); ?>
+
+        <div id="descricao-tecnica-job">
+            <div id="col-1">
+                <div id="txt-cliente" itemprop="cliente">
+                    <?php the_field('cliente'); ?>
+                </div>
+                <div id="txt-campanha" itemprop="campanha">
+                    <?php the_field('campanha'); ?>
+                </div>
+                <div id="txt-agencia" itemprop="agencia">
+                    <?php the_field('agencia'); ?>
+                </div>
+                <div id="txt-ano" itemprop="ano">
+                    <?php the_field('ano'); ?>
+                </div>
+            </div>
+            <div id="col-2">
+                <div id="txt-diretor">
+                    Direção: <?php the_field('diretor'); ?>
+                </div>
+                <details id="ver-mais">
+                    <summary id="txt-ver-mais" onclick="coordenadaMouse(event)">
+                    Ficha Técnica ↓
+                    </summary>
+                    <p>
+                        <?php the_field('ficha_tecnica'); ?>
+                    </p>
+                </details>
+            </div>
+        </div>
+
 <?php endwhile; else: ?>
 
 <h1> Conteúdo não localizado :-( </h1>
