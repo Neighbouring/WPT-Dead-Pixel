@@ -60,7 +60,7 @@
 
 </main>
 
-<footer>
+<footer id="rodape">
 	<?php wp_footer(); ?>
 	<?php get_footer(); ?>
 </footer>

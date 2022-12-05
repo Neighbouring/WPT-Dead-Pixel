@@ -129,7 +129,7 @@ function register_my_menus() {
 	register_nav_menus(
 	  array(
 		'header-menu' => __( 'Menu do Header' ),
-		'extra-menu' => __( 'Extra Menu (TESTE)' )
+		'footer-menu' => __( 'Menu do Rodapé' )
 	   )
 	 );
    }

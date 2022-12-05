@@ -2,8 +2,18 @@
 <div id="sbOnline"> 👌🏽 Conexão estabelecida! </div>
 <div id="sbOffline"> 🦖 Conexão perdida! </div>
 
-<?php if ( get_theme_mod( 'blank_show_copyright', true ) ) : ?>
-
-		<?php echo wp_kses_post( get_theme_mod( 'blank_copyright', __( 'Feito com ❤ por Neighbouring', 'intentionally-blank' ) ) ); ?>
-
-	<?php endif; ?>
+<div id="footer-dead-pixel">
+	<div id="menu-rodape">
+		<?php wp_nav_menu(
+				array(
+					'theme_location' => 'footer-menu'
+				)
+				); 
+			?>
+	</div>
+	<div id="copyrightRodape">
+		<?php if ( get_theme_mod( 'blank_show_copyright', true ) ) : ?>
+			<?php echo "Desenvolvido na Cidade da Garoa com ❤ por Neighbouring" ?>
+		<?php endif; ?>
+	</div>
+</div>

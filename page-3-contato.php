@@ -23,12 +23,7 @@
 		<?php bloginfo( 'name' ); ?>
 	</a>
 </h1>
-<?php wp_nav_menu(
-  array(
-    'theme_location' => 'extra-menu'
-  )
-); 
-?> 
+
 
 
 
@@ -55,9 +50,9 @@ endif;
 
 <?php wp_body_open(); ?>
 
-<footer>
+<footer id="rodape">
 	<?php wp_footer(); ?>
-	<!-- <?php get_footer(); ?> -->
+	<?php get_footer(); ?>
 </footer>
 
 </body>

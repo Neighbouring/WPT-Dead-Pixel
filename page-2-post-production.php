@@ -43,6 +43,10 @@
         <?php endif; ?>
     </div>
 
+    <div id="conteudo">
+        <?php the_content(); ?>
+    </div>
+
         <div id="descricao-tecnica-job">
             <div id="col-1">
                 <div id="txt-cliente" itemprop="cliente">
@@ -73,8 +77,6 @@
             </div>
         </div>
 
-        <?php the_content(); ?>
-
 <?php endwhile; else: ?>
 
 <h1> Conteúdo não localizado :-( </h1>
@@ -82,7 +84,7 @@
 
 </section>
 
-<footer>
+<footer id="rodape">
 	<?php wp_footer(); ?>
 	<?php get_footer(); ?>
 </footer>
