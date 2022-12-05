@@ -85,11 +85,29 @@ function ativaScroll() {
 function modalAbrir() {
   document.getElementById("modalInstitucional").style.display = 'block';
   document.getElementById("btnFechar").style.display = 'block';
-  desativaScroll();
+  // desativaScroll();
 }
 // Fechar
 function modalFechar() {
   document.getElementById("modalInstitucional").style.display = 'none';
   document.getElementById("btnFechar").style.display = 'none';
-  ativaScroll();
+  // ativaScroll();
+}
+
+
+
+// MENU MOBILE
+// Abrir
+function menuMobileAbrir() {
+  document.getElementById("btnAbreMMobile").style.display = 'none';
+  document.getElementById("nav-menu").style.display = 'flex';
+  document.getElementById("btnFecharMMobile").style.display = 'block';
+  // desativaScroll();
+}
+// Fechar
+function menuMobileFechar() {
+  document.getElementById("btnAbreMMobile").style.display = 'block';
+  document.getElementById("nav-menu").style.display = 'none';
+  document.getElementById("btnFecharMMobile").style.display = 'none';
+  // ativaScroll();
 }

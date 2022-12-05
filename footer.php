@@ -13,7 +13,9 @@
 	</div>
 	<div id="copyrightRodape">
 		<?php if ( get_theme_mod( 'blank_show_copyright', true ) ) : ?>
-			<?php echo "Desenvolvido na Cidade da Garoa com ❤ por Neighbouring" ?>
+			<small>
+				<?php echo "Desenvolvido na Cidade da Garoa com ❤ por Neighbouring" ?>	
+			</small>
 		<?php endif; ?>
 	</div>
 </div>

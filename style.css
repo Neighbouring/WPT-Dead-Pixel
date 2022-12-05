@@ -64,6 +64,11 @@ header#header-dead-pixel {
     /* Remove espaço abaixo do Header */
     margin-bottom: -6px;
 }
+@media (max-width:360px){
+    header#header-dead-pixel{
+        height: 50px;
+    }
+}
 /* LOGO SVG - Dead Pixel */
 div#logo-dead-pixel {
     margin: 0;
@@ -78,6 +83,12 @@ ul#menu-menu, ul#menu-menu a {
     text-decoration: none;
     padding: 0;
 }
+@media (max-width: 360px){
+    ul#menu-menu, ul#menu-menu a {
+        font-size: 16px;
+        margin: 5px;
+    }
+}
 /* NAV MENU - Item da Lista LI */
 li.menu-item {
     text-transform: uppercase;
@@ -85,6 +96,79 @@ li.menu-item {
 }
 div#nav-menu-dead-pixel {
     margin-top: -1px;
+}
+div#nav-menu {
+    display: flex;
+}
+@media (max-width: 360px) {
+    div#nav-menu{
+        display: none;
+        background-color: black;
+        position: absolute;
+        z-index: 1;
+        top: 28px;
+        width: 100vw;
+        height: 100vh;
+        margin: -1px;
+        /* display: flex; */
+        /* align-content: center; */
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    div#nav-menu-dead-pixel {
+        margin-top: 0px;
+        margin-bottom: 200px;
+    }
+    ul#menu-menu {
+        display: block;
+    }
+    li.menu-item {
+        text-transform: uppercase;
+        padding: 0px 5px 0px 0px;
+    }
+    div#sm-menu {
+        display: block;
+        position: relative !important;
+        bottom: 15px;
+    }
+}
+div#sm-menu {
+    display: flex;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+a#linkIcoSM {
+    text-decoration: none;
+}
+img#ico-sm-ig,
+img#ico-sm-vimeo {
+    filter: invert(100%);
+    width: 20px;
+}
+
+
+
+/* BTN MENU MOBILE */
+#btnFecharMMobile{
+    display: none;
+    color: white;
+}
+#btnAbreMMobile{
+    display: none;
+}
+@media (max-width: 360px){
+    menu#menuMobile {
+        position: absolute;
+        font-size: 24px;
+        right: 4px;
+        margin-top: 19px;
+    }
+    #btnAbreMMobile{
+        display: block;
+        color: white;
+    }
 }
 
 
@@ -217,7 +301,7 @@ div#conteudo {
 /* FOOTER */
 footer {
     color: white;
-    height: 50vh;
+    height: 300px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -225,15 +309,36 @@ footer {
     justify-content: center;
     align-items: center;
 }
+div#menu-rodape,
+div#copyrightRodape {
+    height: 50px;
+}
 div#footer-dead-pixel {
     height: -webkit-fill-available;
-    background-color: gray;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+ul#menu-menu-rodape {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+div#menu-rodape a,
+div#menu-rodape li a {
+    color: white;
+    text-decoration: none;
+}
+div#menu-rodape {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
 div#copyrightRodape {
-    background-color: yellowgreen;
+    color: dimgray;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
 }
 #sbOnline, #sbOffline {
     visibility: hidden;

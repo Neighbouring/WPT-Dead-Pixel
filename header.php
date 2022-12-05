@@ -97,12 +97,48 @@
 		/assets/svg/Dead-Pixel-Logotipo-WT01.svg" width="" height="" alt="" />
 	</a>
 </div>
-<div id="nav-menu-dead-pixel">
-<?php wp_nav_menu(
-		array(
-			'theme_location' => 'header-menu'
-		)
-	);
-	?>
+<!-- MENU MOBILE FECHAR -->
+<menu id="menuMobile">
+		<div id="btnFecharMMobile" onClick="menuMobileFechar()">
+			<span id="fechar">✕</span>
+		</div>
+		<div id="btnAbreMMobile" onClick="menuMobileAbrir()">
+			<span id="fechar">☰</span>
+		</div>
+</menu>
+
+<div id="nav-menu" class="nav-menu-m">
+	<div id="nav-menu-dead-pixel">
+		<nav>
+					<?php wp_nav_menu(
+			array(
+				'theme_location' => 'header-menu'
+			)
+		);
+		?>
+		</nav>
+
+	</div>
+	<div id="sm-menu">
+		<span>
+			<a href="https://www.instagram.com/estudiodeadpixel/"
+			id="linkIcoSM"
+			target="_blank">
+			<img id="ico-sm-ig" src="
+				<?php echo get_template_directory_uri(); ?>
+				/assets/svg/ico-sm-ig.svg" width="" height="" alt="" />
+			</a>
+		</span>
+		<span>
+			<a href="https://vimeo.com/estudiodeadpixel"
+			id="linkIcoSM"
+			target="_blank">
+			<img id="ico-sm-vimeo" src="
+				<?php echo get_template_directory_uri(); ?>
+				/assets/svg/ico-sm-vimeo.svg" width="" height="" alt="" />
+			</a>
+		</span>
+	</div>
 </div>
+
 </header>
