@@ -105,7 +105,8 @@ ul#menu-menu, ul#menu-menu a {
 }
 @media (max-width: 600px){
     ul#menu-menu, ul#menu-menu a {
-        font-size: 16px;
+        /* font-size: 16px; */
+        font-size: inherit;
         margin: 5px;
     }
 }
@@ -124,22 +125,17 @@ div#nav-menu {
     div#nav-menu{
         display: none;
         background-color: black;
-        position: fixed;
-        /* position: absolute; */
-        /* z-index: 1; */
+        position: absolute;
         top: 45px;
         width: 100vw;
         height: 100vh;
-        margin: -1px;
-        /* display: flex; */
-        /* align-content: center; */
-        align-items: center;
+        /* margin: -1px; */
+        align-items: flex-end;
         flex-direction: column;
-        justify-content: center;
     }
     div#nav-menu-dead-pixel {
         margin-top: 0px;
-        margin-bottom: 200px;
+        /* margin-bottom: 200px; */
     }
     ul#menu-menu {
         display: block;
@@ -152,6 +148,7 @@ div#nav-menu {
         display: block;
         position: relative !important;
         bottom: 15px;
+        flex-direction: column;
     }
 }
 div#sm-menu {
@@ -191,9 +188,9 @@ menu#menuMobile {
 }
 @media (max-width: 600px){
     menu#menuMobile {
+        display: block;
         position: absolute;
         font-size: 24px;
-        /* right: 4px; */
         right: 5px;
         margin-top: 20px;
     }
@@ -348,6 +345,8 @@ div#bgImg{
 }
 /* DESCRIÇÃO - Informações do JOB e Ficha Técnica */
 div#descricao-tecnica-job {
+    font-family: inherit;
+    font-size: 10px;
     margin: 0px 5px 5px 5px;
     color: white;
     display: flex;
@@ -414,6 +413,9 @@ summary {
 }
 summary::webkit-details-marker {
     display: none 
+}
+p#ficha-tecnica-job {
+    margin: auto;
 }
 pre#ficha-tecnica-job {
     margin: 1px 0px -10px 0px;
