@@ -67,8 +67,7 @@
                     <summary id="txt-ver-mais" onclick="coordenadaMouse(event)">
                     <?php the_field('diretor'); ?> ↓
                     </summary>
-                    <p id="ficha-tecnica-job">
-                        <?php the_field('ficha_tecnica'); ?>
+                    <pre id="ficha-tecnica-job"><?php the_field('ficha_tecnica'); ?></pre>
                     </p>
                 </details>
             </div>

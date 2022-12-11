@@ -121,8 +121,8 @@
 	</div>
 	<div id="sm-menu">
 		<span>
-			<a href="https://www.instagram.com/estudiodeadpixel/"
-			id="linkIcoSM"
+			<a
+			id="btnINFO"
 			target="_blank">
 			INFO
 			</a>

@@ -160,6 +160,13 @@ div#sm-menu {
     right: 5px;
     top: 5px;
 }
+a#btnINFO {
+    color: white;
+    cursor: pointer;
+    font-size: 10px;
+    display: block;
+    margin: 4px;
+}
 a#linkIcoSM {
     text-decoration: none;
 }
@@ -177,6 +184,9 @@ img#ico-sm-vimeo {
     color: white;
 }
 #btnAbreMMobile{
+    display: none;
+}
+menu#menuMobile {
     display: none;
 }
 @media (max-width: 600px){
@@ -374,6 +384,7 @@ div#txt-diretor {
 details#ver-mais {
     /* width: 75%; */
     width: 100%;
+    cursor: pointer;
 }
 @media (max-width: 600px){
     div#txt-cliente,
@@ -404,10 +415,10 @@ summary {
 summary::webkit-details-marker {
     display: none 
 }
-p#ficha-tecnica-job {
-    -webkit-user-modify: read-write-plaintext-only;
+pre#ficha-tecnica-job {
+    margin: 1px 0px -10px 0px;
+    font-family: inherit;
 }
-
 
 
 /* CONTENT */

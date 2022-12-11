@@ -63,7 +63,7 @@ function coordenadaMouse(){
 
 // MENU
 // Carregar Modal Institucional
-document.getElementById("menu-item-43").addEventListener("click", modalAbrir);
+document.getElementById("btnINFO").addEventListener("click", modalAbrir);
 
 
 
