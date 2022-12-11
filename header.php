@@ -19,7 +19,7 @@
 <div id="btnFechar" onClick="modalFechar()">
 		<span id="fechar">✕</span>
 </div>
-<div id="modalInstitucional">
+<div id="modalInstitucional" class="modal">
 	<div id="modalFlex">
 		<p id="infoInstitucional">
 			O Estúdio Dead Pixel surgiu em 2013, em um momento no qual formatos não convencionais e demandas de entregas surgiam como consequência de novos hábitos de consumo de imagem do público em geral. Com filmes verticais ou quadrados, gifs, stickers ou filtros, nos especializamos em solucionar problemas para uma nova publicidade ainda em fase de teste por parte das agências e dos clientes.
