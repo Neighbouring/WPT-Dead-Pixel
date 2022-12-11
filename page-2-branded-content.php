@@ -63,14 +63,11 @@
                 </div>
             </div>
             <div id="col-2">
-                <div id="txt-diretor">
-                    Direção: <?php the_field('diretor'); ?>
-                </div>
                 <details id="ver-mais">
                     <summary id="txt-ver-mais" onclick="coordenadaMouse(event)">
-                    Ficha Técnica ↓
+                    <?php the_field('diretor'); ?> ↓
                     </summary>
-                    <p>
+                    <p id="ficha-tecnica-job">
                         <?php the_field('ficha_tecnica'); ?>
                     </p>
                 </details>

@@ -124,6 +124,13 @@
 			<a href="https://www.instagram.com/estudiodeadpixel/"
 			id="linkIcoSM"
 			target="_blank">
+			INFO
+			</a>
+		</span>
+		<span>
+			<a href="https://www.instagram.com/estudiodeadpixel/"
+			id="linkIcoSM"
+			target="_blank">
 			<img id="ico-sm-ig" src="
 				<?php echo get_template_directory_uri(); ?>
 				/assets/svg/ico-sm-ig.svg" width="" height="" alt="" />
