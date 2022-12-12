@@ -103,7 +103,14 @@
 			<span id="fechar">✕</span>
 		</div>
 		<div id="btnAbreMMobile" onClick="menuMobileAbrir()">
-			<span id="fechar">☰</span>
+			<span id="fechar">
+			<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+				<line x1="4" y1="6" x2="20" y2="6"></line>
+				<line x1="4" y1="12" x2="20" y2="12"></line>
+				<line x1="4" y1="18" x2="20" y2="18"></line>
+			</svg>
+			</span>
 		</div>
 </menu>
 
@@ -127,7 +134,7 @@
 			INFO
 			</a>
 		</span>
-		<span>
+		<span id="icoInsta">
 			<a href="https://www.instagram.com/estudiodeadpixel/"
 			id="linkIcoSM"
 			target="_blank">
@@ -136,7 +143,7 @@
 				/assets/svg/ico-sm-ig.svg" width="" height="" alt="" />
 			</a>
 		</span>
-		<span>
+		<span id="icoVimeo">
 			<a href="https://vimeo.com/estudiodeadpixel"
 			id="linkIcoSM"
 			target="_blank">
